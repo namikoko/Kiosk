@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KIOSK — Machines distributrices gratuites à Montréal</title>
+  <meta name="description" content="Installation gratuite de machines distributrices pour écoles, bureaux et espaces publics à Montréal."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ─── STICKY HEADER ─── -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#" class="header__logo">KIOSK</a>
+    <nav class="header__nav" id="nav">
+      <a href="#hero">Accueil</a>
+      <a href="#how">Comment ça fonctionne</a>
+      <a href="#machines">Nos machines</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary header__cta">Contactez-nous</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ─── 1. HERO ─── -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero__img-wrap reveal">
+      <img src="Media/main.png" alt="Machine distributrice dans un espace moderne"/>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 2. AVANTAGES (accordion + image) ─── -->
+<section id="advantages" class="section advantages">
+  <div class="container">
+    <p class="section__tag reveal">AVANTAGES</p>
+    <div class="advantages__grid">
+      <div class="advantages__list">
+        <div class="accordion reveal" data-index="0" data-image="Media/machinelady.png">
+          <button class="accordion__btn active">
+            <span class="accordion__num">1</span>
+            <span>Installation 100% Gratuite</span>
+            <i class="material-icons accordion__icon">expand_more</i>
+          </button>
+          <div class="accordion__body open">
+            <p>Nous installons nos machines distributrices dans votre établissement sans aucun frais. Zéro investissement initial, zéro surprise.</p>
+          </div>
+        </div>
+        <div class="accordion reveal" data-index="1" data-image="Media/guyfixingmachine.png">
+          <button class="accordion__btn">
+            <span class="accordion__num">2</span>
+            <span>Remplissage et entretien inclus</span>
+            <i class="material-icons accordion__icon">expand_more</i>
+          </button>
+          <div class="accordion__body">
+            <p>Notre équipe s'occupe de tout : approvisionnement régulier, nettoyage et maintenance technique. Vous n'avez rien à gérer.</p>
+          </div>
+        </div>
+        <div class="accordion reveal" data-index="2" data-image="Media/snacks.png">
+          <button class="accordion__btn">
+            <span class="accordion__num">3</span>
+            <span>Produits populaires et options santé</span>
+            <i class="material-icons accordion__icon">expand_more</i>
+          </button>
+          <div class="accordion__body">
+            <p>Des marques que vos gens adorent, plus des options santé pour répondre à toutes les préférences alimentaires.</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn--primary btn--pill reveal">
+          Demander une machine
+          <i class="material-icons btn__arrow">arrow_forward</i>
+        </a>
+      </div>
+
+      <div class="advantages__media reveal">
+        <div class="advantages__img-frame">
+          <img id="accordionImage" src="Media/machinelady.png" alt="Avantage Kiosk"/>
+        </div>
+        <div class="advantages__badges">
+          <div class="badge">
+            <i class="material-icons badge__icon">check_circle</i>
+            <span>Aucun frais, aucune surprise</span>
+          </div>
+          <div class="badge">
+            <i class="material-icons badge__icon">flash_on</i>
+            <span>On s'occupe de tout, du début à la fin</span>
+          </div>
+          <div class="badge">
+            <i class="material-icons badge__icon">done</i>
+            <span>Prêt à fonctionner en quelques jours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 3. COMMENT ÇA FONCTIONNE ─── -->
+<section id="how" class="section how">
+  <div class="container">
+    <p class="section__tag reveal">COMMENT ÇA FONCTIONNE</p>
+    <h2 class="section__title reveal">Un processus simple, sans tracas</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__num">01</span>
+        <h3>Vous nous contactez</h3>
+        <p>Remplissez le formulaire ou appelez-nous. Nous évaluons vos besoins en quelques minutes.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">02</span>
+        <h3>On installe la machine</h3>
+        <p>Notre équipe se déplace et installe votre machine gratuitement, à l'endroit idéal.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">03</span>
+        <h3>On s'occupe du remplissage</h3>
+        <p>Approvisionnement régulier en produits populaires et options santé. Vous ne touchez à rien.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">04</span>
+        <h3>Vos gens en profitent</h3>
+        <p>Étudiants, employés et visiteurs paient directement à la machine. Aucune gestion de votre côté.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 4. LIEUX IDÉAUX ─── -->
+<section class="section places">
+  <div class="container">
+    <p class="section__tag reveal">LIEUX IDÉAUX</p>
+    <h2 class="section__title reveal">Nous desservons tous les types d'établissements</h2>
+    <div class="places__grid">
+      <div class="place-card reveal">
+        <i class="material-icons place-card__icon">school</i>
+        <h3>Écoles & universités</h3>
+      </div>
+      <div class="place-card reveal">
+        <i class="material-icons place-card__icon">business</i>
+        <h3>Bureaux & coworking</h3>
+      </div>
+      <div class="place-card reveal">
+        <i class="material-icons place-card__icon">fitness_center</i>
+        <h3>Gyms & centres sportifs</h3>
+      </div>
+      <div class="place-card reveal">
+        <i class="material-icons place-card__icon">groups</i>
+        <h3>Centres communautaires</h3>
+      </div>
+      <div class="place-card reveal">
+        <i class="material-icons place-card__icon">local_hospital</i>
+        <h3>Cliniques & santé</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 5. NOS MACHINES & PRODUITS ─── -->
+<section id="machines" class="section machines">
+  <div class="container">
+    <p class="section__tag reveal">NOS MACHINES</p>
+    <h2 class="section__title reveal">Technologie moderne, produits variés</h2>
+    <div class="machines__grid">
+      <div class="machine-card reveal">
+        <div class="machine-card__header">Types de machines</div>
+        <ul>
+          <li>Boissons froides</li>
+          <li>Collations</li>
+          <li>Combinées</li>
+        </ul>
+      </div>
+      <div class="machine-card reveal">
+        <div class="machine-card__header">Caractéristiques</div>
+        <ul>
+          <li>Paiement sans contact</li>
+          <li>Grande capacité</li>
+          <li>Interface moderne</li>
+        </ul>
+      </div>
+      <div class="machine-card reveal">
+        <div class="machine-card__header">Produits offerts</div>
+        <ul>
+          <li>Boissons froides et chaudes</li>
+          <li>Collations classiques</li>
+          <li>Options santé</li>
+        </ul>
+      </div>
+    </div>
+    <div class="machines__img reveal">
+      <img src="Media/guyfixingmachine.png" alt="Produits dans une machine distributrice"/>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 6. POURQUOI NOUS CHOISIR ─── -->
+<section class="section why">
+  <div class="container">
+    <p class="section__tag reveal">POURQUOI KIOSK</p>
+    <h2 class="section__title reveal">Ce qui nous distingue</h2>
+    <div class="why__grid">
+      <div class="why-card reveal">
+        <h3>Gratuit</h3>
+        <p>Zéro coût pour l'établissement. Pas de frais cachés, pas de surprises.</p>
+      </div>
+      <div class="why-card reveal">
+        <h3>Aucun entretien</h3>
+        <p>Nous gérons tout : remplissage, nettoyage, réparations.</p>
+      </div>
+      <div class="why-card reveal">
+        <h3>Service local</h3>
+        <p>Basés à Montréal, nous sommes toujours à proximité pour intervenir rapidement.</p>
+      </div>
+      <div class="why-card reveal">
+        <h3>Machines modernes</h3>
+        <p>Équipement fiable avec paiement sans contact et interface intuitive.</p>
+      </div>
+      <div class="why-card reveal">
+        <h3>Sans contrat compliqué</h3>
+        <p>Un partenariat simple et transparent. Pas de petits caractères.</p>
+      </div>
+      <div class="why-card reveal">
+        <h3>Produits de qualité</h3>
+        <p>Des marques populaires et des options santé adaptées à votre clientèle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 7. À PROPOS ─── -->
+<section class="section about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p class="section__tag">À PROPOS</p>
+        <h2 class="section__title">Une entreprise locale, un service humain</h2>
+        <p>KIOSK est une entreprise montréalaise dédiée à rendre les collations et boissons accessibles dans tous les types d'établissements. Nous croyons qu'un bon service commence par la simplicité : installation gratuite, entretien complet et produits de qualité.</p>
+        <p>Notre mission est de faciliter la vie des gestionnaires d'écoles, de bureaux et d'espaces publics en leur offrant un service clé en main, sans tracas.</p>
+      </div>
+      <div class="about__media reveal">
+        <img src="Media/snacks.png" alt="Produits Kiosk"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 8. CONTACT ─── -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <p class="section__tag reveal">CONTACT</p>
+    <h2 class="section__title reveal">Demander une machine gratuite</h2>
+    <div class="contact__grid">
+      <form id="contactForm" class="form reveal">
+        <div class="form__row">
+          <div class="form__field">
+            <label for="f-name">Nom</label>
+            <input id="f-name" name="name" required placeholder="Votre nom"/>
+          </div>
+          <div class="form__field">
+            <label for="f-company">École / Entreprise</label>
+            <input id="f-company" name="company" required placeholder="Nom de l'établissement"/>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" name="email" required placeholder="votre@email.com"/>
+          </div>
+          <div class="form__field">
+            <label for="f-phone">Téléphone</label>
+            <input id="f-phone" name="phone" placeholder="514 000 0000"/>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="f-address">Adresse</label>
+            <input id="f-address" name="address" placeholder="Adresse de l'établissement"/>
+          </div>
+          <div class="form__field">
+            <label for="f-type">Type d'établissement</label>
+            <select id="f-type" name="type">
+              <option value="">Sélectionner...</option>
+              <option>École</option>
+              <option>Bureau</option>
+              <option>Gym</option>
+              <option>Centre communautaire</option>
+              <option>Clinique</option>
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--pill" type="submit">
+          Demander une machine gratuite
+          <i class="material-icons btn__arrow">arrow_forward</i>
+        </button>
+      </form>
+
+      <aside class="contact__info reveal">
+        <h3>Coordonnées</h3>
+        <p><strong>Email</strong><br/><a href="mailto:LesDistributeursDote@hotmail.com">LesDistributeursDote@hotmail.com</a></p>
+        <p><strong>Téléphone</strong><br/><a href="tel:+15147976712">514 797 6712</a></p>
+        <p><strong>Région</strong><br/>Montréal, QC</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__logo">KIOSK</span>
+    <span class="footer__copy">&copy; <span id="year"></span> Kiosk. Tous droits réservés.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
