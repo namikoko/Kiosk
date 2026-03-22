@@ -5,11 +5,6 @@
 
 /* ── Fonts ── */
 @font-face{
-  font-family:'Esmarya';
-  src:url('Media/EsmaryaDemo-Regular.otf') format('opentype');
-  font-weight:400;font-style:normal;font-display:swap;
-}
-@font-face{
   font-family:'SF Pro Display';
   src:url('Media/SF-Pro-Display-Light.otf') format('opentype');
   font-weight:300;font-style:normal;font-display:swap;
@@ -26,8 +21,8 @@
 }
 @font-face{
   font-family:'SF Pro Display';
-  src:url('Media/SF-Pro-Display-Ultralight.otf') format('opentype');
-  font-weight:200;font-style:normal;font-display:swap;
+  src:url('Media/SF-Pro-Display-Semibold.otf') format('opentype');
+  font-weight:600;font-style:normal;font-display:swap;
 }
 
 /* ── Tokens ── */
@@ -68,8 +63,8 @@ ul{list-style:none}
 
 /* ── Typography ── */
 .header__logo,.footer__logo{
-  font-family:'Esmarya','Georgia',serif;
-  font-weight:400;
+  font-family:'SF Pro Display','Georgia',serif;
+  font-weight:600;
   line-height:1;
 }
 h1,h2,h3{
