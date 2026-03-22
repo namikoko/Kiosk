@@ -66,6 +66,7 @@ ul{list-style:none}
   font-family:'SF Pro Display','Georgia',serif;
   font-weight:600;
   line-height:1;
+  letter-spacing:.15em;
 }
 h1,h2,h3{
   font-family:'SF Pro Display',system-ui,sans-serif;
