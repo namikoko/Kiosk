@@ -587,6 +587,7 @@ p{margin-bottom:0}
     border-radius:999px;
     text-align:center;
     justify-content:center;
+    color:#ffffff !important;
   }
 
   /* hamburger always on top */
