@@ -93,6 +93,15 @@
     btn.addEventListener('click', function () {
       btn.classList.toggle('open');
       nav.classList.toggle('open');
+      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    });
+    /* close menu when any nav link is clicked */
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        btn.classList.remove('open');
+        nav.classList.remove('open');
+        document.body.style.overflow = '';
+      });
     });
   }
 
