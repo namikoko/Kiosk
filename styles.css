@@ -131,6 +131,7 @@ p{margin-bottom:0}
 }
 .header__nav a:hover::after{width:100%}
 .header__cta{font-size:13px}
+.nav__cta{display:none}
 
 /* hamburger */
 .hamburger{
@@ -525,17 +526,42 @@ p{margin-bottom:0}
 
   /* header mobile nav */
   .header__nav{
-    position:fixed;top:64px;left:0;right:0;bottom:0;
-    background:rgba(255,248,240,.97);
-    backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
-    flex-direction:column;align-items:center;justify-content:center;gap:36px;
-    transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1);
-    z-index:99;
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:var(--bg);
+    flex-direction:column;align-items:center;justify-content:center;gap:0;
+    transform:translateX(100%);transition:transform .45s cubic-bezier(.4,0,.2,1);
+    z-index:999;
+    padding:100px 40px 60px;
   }
   .header__nav.open{transform:translateX(0)}
-  .header__nav a{font-size:19px;color:var(--text)}
-  .header__cta{display:none}
-  .hamburger{display:block}
+  .header__nav a{
+    font-size:22px;font-weight:500;color:var(--text);
+    padding:20px 0;
+    width:100%;text-align:center;
+    border-bottom:1px solid var(--primary-border);
+    opacity:0;transform:translateY(16px);
+    transition:opacity .35s ease,transform .35s ease,color .2s ease;
+  }
+  .header__nav.open a{opacity:1;transform:translateY(0)}
+  .header__nav.open a:nth-child(1){transition-delay:.1s}
+  .header__nav.open a:nth-child(2){transition-delay:.18s}
+  .header__nav.open a:nth-child(3){transition-delay:.26s}
+  .header__nav a:hover{color:var(--primary)}
+  .header__nav a::after{display:none}
+
+  /* show CTA inside mobile nav, hide header CTA */
+  .header__cta{display:none !important}
+  .nav__cta{
+    display:inline-flex !important;
+    margin-top:16px;
+    font-size:15px;
+    border-bottom:none !important;
+    opacity:0;transform:translateY(16px);
+    transition:opacity .35s ease .32s,transform .35s ease .32s;
+  }
+  .header__nav.open .nav__cta{opacity:1;transform:translateY(0)}
+
+  .hamburger{display:block;z-index:1000}
 
   /* grids */
   .steps{grid-template-columns:1fr}

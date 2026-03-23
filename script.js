@@ -128,14 +128,13 @@
       var subject = encodeURIComponent("Demande d'installation — Kiosk");
       var lines = [
         'Nom: ' + d.get('name'),
-        'École/Entreprise: ' + d.get('company'),
+        'Entreprise: ' + d.get('company'),
         'Email: ' + d.get('email'),
-        'Téléphone: ' + d.get('phone'),
         'Adresse: ' + d.get('address'),
         'Type: ' + d.get('type')
       ];
       var body = encodeURIComponent(lines.join('\n'));
-      window.location.href = 'mailto:LesDistributeursDote@hotmail.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:kioskVend@outlook.com?subject=' + subject + '&body=' + body;
     });
   }
 
