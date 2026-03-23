@@ -136,7 +136,7 @@ p{margin-bottom:0}
 }
 .header__nav a:hover::after{width:100%}
 .header__cta{font-size:13px}
-.nav__cta{display:none}
+.nav__cta{display:none !important}
 
 /* hamburger */
 .hamburger{
