@@ -5,6 +5,11 @@
 
 /* ── Fonts ── */
 @font-face{
+  font-family:'Esmarya';
+  src:url('Media/EsmaryaDemo-Regular 2.otf') format('opentype');
+  font-weight:400;font-style:normal;font-display:swap;
+}
+@font-face{
   font-family:'SF Pro Display';
   src:url('Media/SF-Pro-Display-Light.otf') format('opentype');
   font-weight:300;font-style:normal;font-display:swap;
@@ -63,19 +68,19 @@ ul{list-style:none}
 
 /* ── Typography ── */
 .header__logo,.footer__logo{
-  font-family:'SF Pro Display','Georgia',serif;
-  font-weight:600;
+  font-family:'Esmarya','Georgia',serif;
+  font-weight:400;
   line-height:1;
-  letter-spacing:.15em;
+  letter-spacing:.08em;
 }
 h1,h2,h3{
   font-family:'SF Pro Display',system-ui,sans-serif;
-  font-weight:500;
+  font-weight:300;
   line-height:1.15;
   letter-spacing:-.015em;
 }
 h2{font-size:clamp(26px,3.8vw,40px);margin-bottom:12px}
-h3{font-size:clamp(16px,2vw,19px);font-weight:500;line-height:1.25}
+h3{font-size:clamp(16px,2vw,19px);font-weight:300;line-height:1.25}
 p{margin-bottom:0}
 
 /* ── Layout ── */
@@ -119,7 +124,7 @@ p{margin-bottom:0}
 }
 .header__nav{display:flex;gap:32px;align-items:center}
 .header__nav a{
-  font-weight:400;font-size:13.5px;color:var(--text-muted);
+  font-weight:300;font-size:13.5px;color:var(--text-muted);
   position:relative;padding:4px 0;letter-spacing:.01em;
   transition:color var(--transition);
 }
@@ -155,7 +160,7 @@ p{margin-bottom:0}
    ═══════════════════════════════════════════════════════ */
 .btn{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:'SF Pro Display',sans-serif;font-weight:400;font-size:14px;
+  font-family:'SF Pro Display',sans-serif;font-weight:300;font-size:14px;
   padding:11px 22px;border-radius:50px;border:0;cursor:pointer;
   letter-spacing:.01em;
   transition:all var(--transition);
@@ -202,7 +207,7 @@ p{margin-bottom:0}
   background:none;border:0;cursor:pointer;
   padding:22px 0;
   font-family:'SF Pro Display',sans-serif;
-  font-weight:400;font-size:15.5px;color:var(--text);
+  font-weight:300;font-size:15.5px;color:var(--text);
   text-align:left;transition:color var(--transition);
 }
 .accordion__btn:hover{color:var(--primary)}
@@ -282,7 +287,7 @@ p{margin-bottom:0}
 }
 .badge span{
   font-size:15px;
-  font-weight:400;
+  font-weight:300;
   line-height:1.6;
   color:var(--text);
   letter-spacing:-.005em;
@@ -321,7 +326,7 @@ p{margin-bottom:0}
   margin-bottom:16px;
   line-height:1;
 }
-.step h3{margin-bottom:10px;font-size:15px;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+.step h3{margin-bottom:10px;font-size:15px;text-transform:uppercase;letter-spacing:.05em;font-weight:400}
 .step p{font-size:13.5px;color:var(--text-muted);line-height:1.65}
 
 /* ═══════════════════════════════════════════════════════
@@ -348,7 +353,7 @@ p{margin-bottom:0}
   font-size:34px;color:var(--primary);
   margin:0 auto 14px;display:block;
 }
-.place-card h3{font-size:14px;font-weight:500;letter-spacing:.01em;line-height:1.3}
+.place-card h3{font-size:14px;font-weight:300;letter-spacing:.01em;line-height:1.3}
 
 /* ═══════════════════════════════════════════════════════
    MACHINES
@@ -409,7 +414,7 @@ p{margin-bottom:0}
   border-left-color:var(--primary);
 }
 .why-card h3{
-  font-size:15px;font-weight:500;letter-spacing:-.01em;color:var(--text);
+  font-size:15px;font-weight:400;letter-spacing:-.01em;color:var(--text);
 }
 .why-card p{font-size:13.5px;color:var(--text-muted);line-height:1.65}
 
@@ -464,13 +469,13 @@ p{margin-bottom:0}
   box-shadow:var(--shadow-md);
   display:flex;flex-direction:column;gap:20px;
 }
-.contact__info h3{font-size:16px;font-weight:500}
+.contact__info h3{font-size:16px;font-weight:300}
 .contact__info p{font-size:14px;color:var(--text-muted);line-height:1.6}
 .contact__info strong{
-  display:block;color:var(--text);font-weight:500;
+  display:block;color:var(--text);font-weight:300;
   margin-bottom:2px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;
 }
-.contact__info a{color:var(--primary);font-weight:400}
+.contact__info a{color:var(--primary);font-weight:300}
 .contact__info a:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ═══════════════════════════════════════════════════════
@@ -551,7 +556,7 @@ p{margin-bottom:0}
   /* nav links */
   .header__nav a{
     font-size:28px;
-    font-weight:500;
+    font-weight:300;
     color:var(--text);
     padding:24px 0;
     width:100%;
