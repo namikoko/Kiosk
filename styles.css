@@ -579,10 +579,14 @@ p{margin-bottom:0}
   .header__cta{display:none !important}
   .nav__cta{
     display:inline-flex !important;
+    width:auto !important;
     margin-top:32px;
-    font-size:16px;
-    padding:14px 36px;
+    font-size:16px !important;
+    padding:14px 40px !important;
     border-bottom:none !important;
+    border-radius:999px;
+    text-align:center;
+    justify-content:center;
   }
 
   /* hamburger always on top */
